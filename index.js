@@ -35,9 +35,16 @@ const team2 = players.slice();
 const team3 = [].concat(players);
 
 // or use the new ES6 Spread
+const team4 = [...players];
+team4[3] = 'heee hawww';
+console.log(team4);
+
+const team5 = Array.from(players);
+
 // now when we update it, the original one isn't changed
 // The same thing goes for objects, let's say we have a person object
 // with Objects
+
 // and think we make a copy:
 // how do we take a copy instead?
 // We will hopefully soon see the object ...spread
