@@ -28,8 +28,12 @@ team[3] = 'Lux';
 // oh no - we have edited the original array too!
 // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 // So, how do we fix this? We take a copy instead!
+const team2 = players.slice();
+
 // one way
 // or create a new array and concat the old one in
+const team3 = [].concat(players);
+
 // or use the new ES6 Spread
 // now when we update it, the original one isn't changed
 // The same thing goes for objects, let's say we have a person object
