@@ -1,6 +1,20 @@
 // start with strings, numbers and booleans
+let age = 100;
+let age2 = age;
+console.log(age, age2);
+age = 200;
+console.log(age, age2);
+
+let name = 'Josh';
+let name2 = name;
+console.log(name, name2);
+name2 = 'Yeshua';
+console.log(name, name2);
+
+
 // Let's say we have an array
 const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+
 // and we want to make a copy of it.
 // You might think we can just do something like this:
 // however what happens when we update that array?
