@@ -74,3 +74,9 @@ console.clear();
 console.log(josh);
 
 const dev = Object.assign ({}, josh);
+
+// Object.assign only does one level deep
+// to do a clone, get a function "clone deep"
+
+const dev2 = JSON.parse(JSON.stringify(josh));
+// This is the "poor man's deep clone"
